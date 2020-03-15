@@ -5,21 +5,21 @@
   
 
   
-  <title>solution-p5728 | �˼� Fond_Dream �� Blog</title>
+  <title>solution-p5728 | 菜鸡 Fond_Dream 的 Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="��һ�ۿ���ʱ��ΪҪ�ýṹ�塭������ʵ��ά������ܽ�� + �о���ά����Ƚṹ��򵥣� �G���������ôû���ö�ά����ģ��Ҿ��ˣ�">
+  <meta name="description" content="第一眼看到时以为要用结构体……（其实二维数组就能解决 + 感觉二维数组比结构体简单） 欸？题解里怎么没有用二维数组的？我惊了！   正文要注意的几点：  循环时，不能自己和自己比，所以第二个变量要从第一个变量 $+ 1$ 开始。12for (int i &#x3D; 1; i &lt;&#x3D; n; i++)   for (int j &#x3D; i + 1; j &lt;&#x3D; n; j++) 两数相减，可能会减出负数，所">
 <meta property="og:type" content="article">
 <meta property="og:title" content="solution-p5728">
 <meta property="og:url" content="http://yoursite.com/2020/03/15/solution-p5728/index.html">
-<meta property="og:site_name" content="�˼� Fond_Dream �� Blog">
-<meta property="og:description" content="��һ�ۿ���ʱ��ΪҪ�ýṹ�塭������ʵ��ά������ܽ�� + �о���ά����Ƚṹ��򵥣� �G���������ôû���ö�ά����ģ��Ҿ��ˣ�">
+<meta property="og:site_name" content="菜鸡 Fond_Dream 的 Blog">
+<meta property="og:description" content="第一眼看到时以为要用结构体……（其实二维数组就能解决 + 感觉二维数组比结构体简单） 欸？题解里怎么没有用二维数组的？我惊了！   正文要注意的几点：  循环时，不能自己和自己比，所以第二个变量要从第一个变量 $+ 1$ 开始。12for (int i &#x3D; 1; i &lt;&#x3D; n; i++)   for (int j &#x3D; i + 1; j &lt;&#x3D; n; j++) 两数相减，可能会减出负数，所">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-15T09:56:56.015Z">
-<meta property="article:modified_time" content="2020-03-15T09:57:20.082Z">
+<meta property="article:modified_time" content="2020-03-15T10:22:05.596Z">
 <meta property="article:author" content="water-dream">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="�˼� Fond_Dream �� Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="菜鸡 Fond_Dream 的 Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -40,7 +40,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">�˼� Fond_Dream �� Blog</a>
+        <a href="/" id="logo">菜鸡 Fond_Dream 的 Blog</a>
       </h1>
       
     </div>
@@ -88,22 +88,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>��һ�ۿ���ʱ��ΪҪ�ýṹ�塭��<br>����ʵ��ά������ܽ�� + �о���ά����Ƚṹ��򵥣�</p>
-<p><del>�G���������ôû���ö�ά����ģ��Ҿ��ˣ�</del>  </p>
-<a id="more"></a>
-<h3 id="����"><a href="#����" class="headerlink" title="����"></a>����</h3><p>Ҫע��ļ��㣺</p>
+        <p>第一眼看到时以为要用结构体……<br>（其实二维数组就能解决 + 感觉二维数组比结构体简单）</p>
+<p><del>欸？题解里怎么没有用二维数组的？我惊了！</del>  </p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>要注意的几点：</p>
 <ul>
-<li>ѭ��ʱ�������Լ����Լ��ȣ����Եڶ�������Ҫ�ӵ�һ������ $+ 1$ ��ʼ��<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j++)</span><br></pre></td></tr></table></figure></li>
-<li>������������ܻ����������������Ҫ <code>abs</code>��</li>
+<li>循环时，不能自己和自己比，所以第二个变量要从第一个变量 $+ 1$ 开始。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j++)</span><br></pre></td></tr></table></figure></li>
+<li>两数相减，可能会减出负数，所以需要 <code>abs</code>。</li>
 </ul>
-<p>����ི���ˣ��������룺</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, a[<span class="number">1010</span>][<span class="number">5</span>], sum[<span class="number">1010</span>];</span><br><span class="line"><span class="keyword">int</span> cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; a[i][<span class="number">1</span>] &gt;&gt; a[i][<span class="number">2</span>] &gt;&gt; a[i][<span class="number">3</span>];</span><br><span class="line">		sum[i] = a[i][<span class="number">1</span>] + a[i][<span class="number">2</span>] + a[i][<span class="number">3</span>];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">abs</span> (a[i][<span class="number">1</span>] - a[j][<span class="number">1</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (a[i][<span class="number">2</span>] - a[j][<span class="number">2</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (a[i][<span class="number">3</span>] - a[j][<span class="number">3</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (sum[i] - sum[j]) &lt;= <span class="number">10</span>) <span class="comment">// �������ĸ����һ��</span></span><br><span class="line">				cnt++;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>�����������ޣ������Ӳ�Ҫ���������ӡ�  </p>
+<p>（差不多讲完了？）给代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, a[<span class="number">1010</span>][<span class="number">5</span>], sum[<span class="number">1010</span>];</span><br><span class="line"><span class="keyword">int</span> cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; a[i][<span class="number">1</span>] &gt;&gt; a[i][<span class="number">2</span>] &gt;&gt; a[i][<span class="number">3</span>];</span><br><span class="line">		sum[i] = a[i][<span class="number">1</span>] + a[i][<span class="number">2</span>] + a[i][<span class="number">3</span>];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">abs</span> (a[i][<span class="number">1</span>] - a[j][<span class="number">1</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (a[i][<span class="number">2</span>] - a[j][<span class="number">2</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (a[i][<span class="number">3</span>] - a[j][<span class="number">3</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (sum[i] - sum[j]) &lt;= <span class="number">10</span>) <span class="comment">// 这样看的更清楚一点</span></span><br><span class="line">				cnt++;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>嘤嘤嘤求赞赞，嘤嘤嘤不要白嫖嘤嘤嘤。  </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/solution-p5728/" data-id="ck7svg52v0000dg6r4d3705gb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/solution-p5728/" data-id="ck7sw6s6l0000546r3w1n8944" class="article-share-link">Share</a>
       
       
     </footer>
