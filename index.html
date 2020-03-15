@@ -88,28 +88,15 @@
       
         <p>由于洛谷题解页面太丑了 <del>（我号没了</del> ，大家去<a href="https://www.luogu.com.cn/blog/WagTail/solution-P6153" target="_blank" rel="noopener">博客</a>里看更好哦。<br>警告：不要直接复制代码！  </p>
 <p>这题嘛 …… 第一眼：啥也看不懂。<br>第二眼： $woc$ …… 这怎么做？<br>第三眼：哈哈哈这 $sb$ 题吧 …… </p>
-<h3 id="进入正题"><a href="#进入正题" class="headerlink" title="进入正题"></a>进入正题</h3><p>这道题里面，有一道<strong>特别</strong>重要的话，否则这种方法不可行。</p>
-<p><strong>每次给出的条件都是有用的，也就是说，每次给出的条件无法由之前的条件推导得来。</strong></p>
-<p>也就是说，每次给出的<strong>新的</strong>条件和之前给的<strong>所有</strong>条件<strong>都</strong>不一样。</p>
-<p>看完这句话后，就可以分析题目了！</p>
-<p>首先，我们知道：“每增加一组相同的物品，那么不同的物品的数量减 $1$ ”。</p>
-<p>Q：那么最开始有多少不同的物品呢？<br>A：最开始 $n$ 种物品都是不一样的，所以最开始有 $n$ 种不同的物品。</p>
-<p>Q：那么又有多少组相同的物品呢？<br>A：显然，有 $m$ 组啊。</p>
-<p>那么，我们就顺理成章的把这题变成了 <code>n - m Problem</code>  <del>（怎么听着有点别扭？</del></p>
-<p>于是，我们就写出了这样一个程序：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; n - m &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>然后我们发现，欸，怎么才 $60$ $pts$ ？？</p>
-<p>其实这题有坑的说，看下面 ↓</p>
-<p>对于 $100\%$ 的数据，$1 \le n \le 10^{18}$，$1 \le m \le 10^7$。</p>
-<p>注意这里的 $n$ 是小于 $10^{18}$ 的，所以要开 <code>long long</code>。（ <code>unsigned long long</code> 也可以 ）。</p>
-<p>这题的 $ac$ 代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> n, m;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%lld %lld"</span>, &amp;n, &amp;m);</span><br><span class="line">	<span class="built_in">printf</span> (<span class="string">"%lld\n"</span>, n - m);</span><br><span class="line">	system (<span class="string">"pause"</span>); <span class="comment">// 提交的时候删掉这句</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>看在我每句话的末尾都加了句号，每个字母、数字都加了 $\LaTeX$ ，代码码风这么漂亮的份上，给个赞赞呗（</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/03/15/solution-p6153/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/solution-p6153/" data-id="ck7sw6s7i0001546rdbnper9i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/solution-p6153/" data-id="ck7swdcqy0001kk6r8c2gd3rb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -143,19 +130,15 @@
       
         <p>第一眼看到时以为要用结构体……<br>（其实二维数组就能解决 + 感觉二维数组比结构体简单）</p>
 <p><del>欸？题解里怎么没有用二维数组的？我惊了！</del>  </p>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>要注意的几点：</p>
-<ul>
-<li>循环时，不能自己和自己比，所以第二个变量要从第一个变量 $+ 1$ 开始。<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j++)</span><br></pre></td></tr></table></figure></li>
-<li>两数相减，可能会减出负数，所以需要 <code>abs</code>。</li>
-</ul>
-<p>（差不多讲完了？）给代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, a[<span class="number">1010</span>][<span class="number">5</span>], sum[<span class="number">1010</span>];</span><br><span class="line"><span class="keyword">int</span> cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span> (<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; a[i][<span class="number">1</span>] &gt;&gt; a[i][<span class="number">2</span>] &gt;&gt; a[i][<span class="number">3</span>];</span><br><span class="line">		sum[i] = a[i][<span class="number">1</span>] + a[i][<span class="number">2</span>] + a[i][<span class="number">3</span>];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt;= n; j++)</span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">abs</span> (a[i][<span class="number">1</span>] - a[j][<span class="number">1</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (a[i][<span class="number">2</span>] - a[j][<span class="number">2</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (a[i][<span class="number">3</span>] - a[j][<span class="number">3</span>]) &lt;= <span class="number">5</span> &amp;&amp; </span><br><span class="line">				<span class="built_in">abs</span> (sum[i] - sum[j]) &lt;= <span class="number">10</span>) <span class="comment">// 这样看的更清楚一点</span></span><br><span class="line">				cnt++;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>嘤嘤嘤求赞赞，嘤嘤嘤不要白嫖嘤嘤嘤。  </p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/03/15/solution-p5728/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/solution-p5728/" data-id="ck7sw6s6l0000546r3w1n8944" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/solution-p5728/" data-id="ck7swdcq00000kk6rhvlc5l08" class="article-share-link">Share</a>
       
       
     </footer>
