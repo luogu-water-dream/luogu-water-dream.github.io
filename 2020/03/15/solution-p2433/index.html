@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>题解 【P2433 小学数学 N 合一】 | 菜鸡 Fond_Dream 的 Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="很简单的一道题，只不过这个码量嘛……">
+<meta property="og:type" content="article">
+<meta property="og:title" content="题解 【P2433 小学数学 N 合一】">
+<meta property="og:url" content="http://yoursite.com/2020/03/15/solution-p2433/index.html">
+<meta property="og:site_name" content="菜鸡 Fond_Dream 的 Blog">
+<meta property="og:description" content="很简单的一道题，只不过这个码量嘛……">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-15T11:50:36.089Z">
+<meta property="article:modified_time" content="2020-03-15T12:18:25.946Z">
+<meta property="article:author" content="water-dream">
+<meta property="article:tag" content="题解">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="菜鸡 Fond_Dream 的 Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">菜鸡 Fond_Dream 的 Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-solution-p2433" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/15/solution-p2433/" class="article-date">
+  <time datetime="2020-03-15T11:50:36.089Z" itemprop="datePublished">2020-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      题解 【P2433 小学数学 N 合一】
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很简单的一道题，<del>只不过这个码量嘛……</del></p>
+<a id="more"></a>
+<p>我们先来一道一道的分析：</p>
+<h3 id="问题一："><a href="#问题一：" class="headerlink" title="问题一："></a>问题一：</h3><p>直接 <code>printf (&quot;I love Luogu!&quot;);</code> 就行。</p>
+<h3 id="问题二："><a href="#问题二：" class="headerlink" title="问题二："></a>问题二：</h3><p>第一问问的是 “一共”，输出 <code>2 + 4</code>。<br>第二问问的是 “八尾能拿走多少”，用 $10$ 减去第一问的值即可。</p>
+<h3 id="问题三："><a href="#问题三：" class="headerlink" title="问题三："></a>问题三：</h3><ol>
+<li>$14 \div 4$ （相信很好理解）  </li>
+<li>$14 - 14 \div 4 \times 4$</li>
+<li>$14 \% 4$ </li>
+</ol>
+<h3 id="问题四："><a href="#问题四：" class="headerlink" title="问题四："></a>问题四：</h3><p>$500.0 \div 3$ （需要注意一点，一是这个 <code>500</code> 后面一定要加 <code>.0</code> 否则答案会是整数） </p>
+<h3 id="问题五："><a href="#问题五：" class="headerlink" title="问题五："></a>问题五：</h3><p>$(260 + 220) \div (12 + 20)$ （小学行程问题，我想应该没有问题）</p>
+<h3 id="问题六："><a href="#问题六：" class="headerlink" title="问题六："></a>问题六：</h3><p>$\sqrt { 6^2 + 9^2 }$ （需要加 <code>math.h</code>）</p>
+<h3 id="问题七："><a href="#问题七：" class="headerlink" title="问题七："></a>问题七：</h3><p>比前几道题还智障，不说什么。</p>
+<h3 id="问题八："><a href="#问题八：" class="headerlink" title="问题八："></a>问题八：</h3><ol>
+<li>$2 \pi r$  </li>
+<li>$\pi r^2$</li>
+<li>$\dfrac{4}{3} \pi r^3$</li>
+</ol>
+<h3 id="问题九："><a href="#问题九：" class="headerlink" title="问题九："></a>问题九：</h3><p>智障题不解释。</p>
+<h3 id="问题十："><a href="#问题十：" class="headerlink" title="问题十："></a>问题十：</h3><p>典型牛吃草问题，具体看代码。</p>
+<h3 id="问题十一："><a href="#问题十一：" class="headerlink" title="问题十一："></a>问题十一：</h3><p>小学 $4$ 年级追击问题（不要问我为什么这么清楚），具体看代码。</p>
+<h3 id="问题十二："><a href="#问题十二：" class="headerlink" title="问题十二："></a>问题十二：</h3><p>只需要了解一些 <a href="https://baike.baidu.com/item/ASCII/309296?fr=aladdin" target="_blank" rel="noopener">ascii</a> 码的知识就可以做出来。</p>
+<h3 id="问题十三："><a href="#问题十三：" class="headerlink" title="问题十三："></a>问题十三：</h3><p>先算体积，然后开三次方根即可算出边长。</p>
+<h3 id="问题十四："><a href="#问题十四：" class="headerlink" title="问题十四："></a>问题十四：</h3><p>具体看代码理解。</p>
+<p>code：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">double</span> PI = <span class="number">3.141593</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> T;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; T;</span><br><span class="line">	<span class="keyword">if</span> (T == <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"I love Luogu!"</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="number">2</span> + <span class="number">4</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; <span class="number">10</span> - <span class="number">2</span> - <span class="number">4</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">3</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="number">14</span> / <span class="number">4</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    	<span class="built_in">cout</span> &lt;&lt; <span class="number">14</span> / <span class="number">4</span> * <span class="number">4</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    	<span class="built_in">cout</span> &lt;&lt; <span class="number">14</span> - <span class="number">14</span> / <span class="number">4</span> * <span class="number">4</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">4</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="number">500.0</span> / <span class="number">3</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">5</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; (<span class="number">260</span> + <span class="number">220</span>) / (<span class="number">12</span> + <span class="number">20</span>) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">6</span>) &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">sqrt</span> (<span class="built_in">pow</span> (<span class="number">6</span>, <span class="number">2</span>) + <span class="built_in">pow</span> (<span class="number">9</span>, <span class="number">2</span>)) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">7</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> balance = <span class="number">100</span>;</span><br><span class="line">		balance = balance + <span class="number">10</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; balance &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		balance -= <span class="number">20</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; balance &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		balance = <span class="number">0</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; balance &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">8</span>) &#123;</span><br><span class="line">		<span class="keyword">double</span> r = <span class="number">5</span>;</span><br><span class="line">		<span class="keyword">const</span> <span class="keyword">double</span> PI = <span class="number">3.141593</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="number">2</span> * PI * r &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; PI * r * r &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="number">4.0</span> / <span class="number">3</span> * <span class="function">PI * <span class="title">pow</span> <span class="params">(r, <span class="number">3</span>)</span> &lt;&lt; <span class="built_in">endl</span></span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">9</span>) &#123;</span><br><span class="line">		<span class="keyword">int</span> num = <span class="number">1</span>;</span><br><span class="line">		num = (num + <span class="number">1</span>) * <span class="number">2</span>;</span><br><span class="line">		num = (num + <span class="number">1</span>) * <span class="number">2</span>;</span><br><span class="line">		num = (num + <span class="number">1</span>) * <span class="number">2</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; num &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">10</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> n1 = <span class="number">8</span>, t1 = <span class="number">30</span>, n2 = <span class="number">10</span>, t2 = <span class="number">6</span>;</span><br><span class="line">		<span class="keyword">int</span> t3 = <span class="number">10</span>;</span><br><span class="line">		<span class="keyword">double</span> inc_rate = (<span class="number">1.0</span> * n1 * t1 - n2 * t2) / (t1 - t2);</span><br><span class="line">		<span class="keyword">double</span> init_num = n2 * t2 - inc_rate * t2;</span><br><span class="line">		<span class="keyword">double</span> ans = (init_num + t3 * inc_rate) /t3;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">11</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> v_a = <span class="number">5</span>, v_yao = <span class="number">8</span>, distance = <span class="number">100</span>;</span><br><span class="line">		<span class="keyword">double</span> delta, ans;</span><br><span class="line">		delta = v_yao - v_a;</span><br><span class="line">		ans = distance / delta;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">12</span>) &#123;</span><br><span class="line">        <span class="keyword">int</span> ans1;</span><br><span class="line">		<span class="keyword">char</span> ans2;</span><br><span class="line">		ans1 = <span class="string">'M'</span> - <span class="string">'A'</span> + <span class="number">1</span>;</span><br><span class="line">		ans2 = <span class="string">'A'</span> + <span class="number">18</span> - <span class="number">1</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ans1 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; ans2 &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">13</span>) &#123;</span><br><span class="line">		<span class="keyword">int</span> r1 = <span class="number">4</span>, r2 = <span class="number">10</span>;</span><br><span class="line">		<span class="keyword">double</span> V, l;</span><br><span class="line">		V = <span class="number">4.0</span> / <span class="number">3</span> * PI *(r1 * r1 * r1 + r2 * r2 * r2);</span><br><span class="line">		l = <span class="built_in">pow</span> (V, <span class="number">1.0</span> / <span class="number">3</span>);</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; (<span class="keyword">int</span>)l &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (T == <span class="number">14</span>) &#123;</span><br><span class="line">		<span class="keyword">double</span> a = <span class="number">1</span>, b = <span class="number">-100</span>, c = <span class="number">2400</span>;</span><br><span class="line">		<span class="keyword">double</span> delta, ans;</span><br><span class="line">		delta = <span class="built_in">pow</span> (b, <span class="number">2</span>) - <span class="number">4</span> * a * c;</span><br><span class="line">		ans = (-b + <span class="built_in">sqrt</span> (delta)) / (<span class="number">2</span> * a);</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="number">110</span> - <span class="keyword">int</span> (ans + <span class="number">0.5</span>) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/03/15/solution-p2433/" data-id="ck7t09x3q00005s6re1hygmtt" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/03/15/solution-p6153/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">题解 P5728 【【深基5.例5】旗鼓相当的对手】</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 10px;">题解</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/03/15/solution-p2433/">题解 【P2433 小学数学 N 合一】</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/15/solution-p6153/">题解 P5728 【【深基5.例5】旗鼓相当的对手】</a>
+          </li>
+        
+          <li>
+            <a href="/2020/03/15/solution-p5728/">题解 P6153 【询问】</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 water-dream<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!-- script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
