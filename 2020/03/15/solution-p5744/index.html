@@ -15,7 +15,7 @@
 <meta property="og:description" content="废话不多说直接进入正题：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-15T12:48:48.227Z">
-<meta property="article:modified_time" content="2020-03-15T12:49:47.094Z">
+<meta property="article:modified_time" content="2020-03-15T14:59:36.859Z">
 <meta property="article:author" content="water-dream">
 <meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
@@ -98,7 +98,7 @@
 <p>每循环到一个学员：</p>
 <ul>
 <li>年龄要加一。  </li>
-<li>成绩 $+$$=$ $20\%$ 成绩。</li>
+<li>成绩 $+$$=$ $20 \%$ 成绩。</li>
 </ul>
 <p>那么就可以写出代码了。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Luogu</span> &#123;</span></span><br><span class="line">	<span class="built_in">string</span> name;</span><br><span class="line">	<span class="keyword">int</span> age, score;</span><br><span class="line">&#125; a[<span class="number">100000</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; a[i].name &gt;&gt; a[i].age &gt;&gt; a[i].score;</span><br><span class="line">		a[i].age++, a[i].score = a[i].score / <span class="number">5</span> * <span class="number">6</span>;</span><br><span class="line">		<span class="keyword">if</span> (a[i].score &gt; <span class="number">600</span>) a[i].score = <span class="number">600</span>;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; a[i].name &lt;&lt; <span class="string">" "</span> &lt;&lt; a[i].age &lt;&lt; <span class="string">" "</span> &lt;&lt; a[i].score &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -107,7 +107,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/15/solution-p5744/" data-id="ck7t3xqxg0004yo6r429v6uvx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/15/solution-p5744/" data-id="ck7t7vkln000bx06r286x6931" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
